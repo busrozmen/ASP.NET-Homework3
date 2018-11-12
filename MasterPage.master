@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: 50%; margin: 0 auto; text-align: center">
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="Default.aspx">Main Page</asp:HyperLink></td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="Books.aspx">Books</asp:HyperLink></td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="Cds.aspx">CDs</asp:HyperLink></td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="AddBook.aspx">Add New Book</asp:HyperLink></td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="AddCD.aspx">Add New CD</asp:HyperLink></td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="bottom">
+                <asp:Label ID="Label2" runat="server" Text="Last Visited Pages:" Font-Bold="True"></asp:Label><br />
+                <br />
+                <asp:HyperLink ID="HyperLink1" runat="server"></asp:HyperLink><br />
+                <asp:HyperLink ID="HyperLink2" runat="server"></asp:HyperLink><br />
+                <asp:HyperLink ID="HyperLink3" runat="server"></asp:HyperLink><br />
+                <asp:HyperLink ID="HyperLink4" runat="server"></asp:HyperLink><br />
+                <asp:HyperLink ID="HyperLink5" runat="server"></asp:HyperLink><br />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
